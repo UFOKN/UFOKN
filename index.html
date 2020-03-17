@@ -1,247 +1,235 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Delivering flood information to anyone, anytime, anywhere.">
-    <meta name="keywords" content="urban, flood, flooding, network, UF-OKN, UFOKN" />
-    <link rel="icon" href="favicon.ico">
+<!DOCTYPE html>
+<html lang="en" class="no-js orange">
+	<head>
+		<meta charset="utf-8">
 
-    <title>Urban Flooding Open Knowledge Network</title>
+		<title>Urban Flooding Open Knowledge Network</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="resources/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="canonical" href="https://ufokn.github.io/UFOKN/">
 
-    <!-- Custom styles for this template -->
-    <link href="resources/css/index.css" rel="stylesheet">
+		<!-- Metadata -->
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Delievering the flood information you need anytime anywhere.">
+		<meta name="keywords" content="urban, flood, flooding, network, UF-OKN, UFOKN">
 
-  </head>
-  <body>
+		<!-- Open Graph -->
+		<meta name="og:title" content="Urban Flooding Open Knowledge Network">
+		<meta name="og:type" content="article">
+		<meta name="og:url" content="https://ufokn.github.io/UFOKN/">
+		<meta name="og:site_name" content="Urban Flooding Open Knowledge Network">
+		<meta name="og:description" content="Urban Flooding Open Knowledge Network">
 
-    <header>
-      <nav class="navbar navbar-expand-md navbar-dark navbar-static-top bg-dark">
-        <a class="navbar-brand" href="#">UFOKN</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="documentation.html">Team Members</a>
-            </li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li>
-              <a class="navbar-brand" href="https://github.com/mikejohnson51/FlowFinder">
-                <svg aria-hidden="true" data-prefix="fab" data-icon="github" class="svg-inline--fa fa-github fa-w-16 nav-link" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
+		<!-- Fav icon -->
+		<link rel="icon" href="favicon.ico">
 
-    <main>
+		<!-- Styles -->
+		<link href="resources/css/bootstrap.min.css?t=1584448635" rel="stylesheet">
+		<link href="resources/css/index.css?t=1584448635" rel="stylesheet">
 
-      <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-          <li data-target="#myCarousel" data-slide-to="1"></li>
-          <li data-target="#myCarousel" data-slide-to="2"></li>
-          <li data-target="#myCarousel" data-slide-to="3"></li>
-          <li data-target="#myCarousel" data-slide-to="4"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img class="first-slide" src="images/carousel/flood-1.jpg" alt="First slide">
-            <div class="container">
-              <div class="carousel-caption">
-                <h1>Connecting you to risk</h1>
-                <p>Delievering the flood information you need anytime anywhere.</p>
-                <br>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img class="second-slide" src="images/carousel/flood-2.jpg" alt="Second slide">
-            <div class="container">
-              <div class="carousel-caption">
-                <h1>Hydrology as a Service</h1>
-                <p>You can get temperature and rain forecast for anywhere, why not for your local rivers?</p>
-               <br>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img class="third-slide" src="images/carousel/flood-3.jpg" alt="Third slide">
-            <div class="container">
-              <div class="carousel-caption">
-                <h1>Connecting you to risk</h1>
-                <p>Delievering the flood information you need anytime anywhere.</p>
-               <br>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img class="fourth-slide" src="images/carousel/flood-4.jpg" alt="Fourth slide">
-            <div class="container">
-              <div class="carousel-caption">
-                <h1>Hydrology as a Service</h1>
-                <p>You can get temperature and rain forecast for anywhere, why not for your local rivers?</p>
-                <br>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img class="fifth-slide" src="images/carousel/flood-5.jpg" alt="Fifth slide">
-            <div class="container">
-              <div class="carousel-caption">
-                <h1>Connecting you to risk</h1>
-                <p>Delievering the flood information you need anytime anywhere.</p>
-                <p><a class="btn btn-lg btn-primary" href="http://ec2-18-222-146-63.us-east-2.compute.amazonaws.com:3838/" role="button">Launch App</a></p><br>
-              </div>
-            </div>
-          </div>
-        </div>
-        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
+		<!-- Scripts -->
+		<!--[if lt IE 9]>
+			<script type="text/javascript" src="resources/js/html5.js"></script>
+		<![endif]-->
+		<script src="resources/js/jquery-3.3.1.slim.min.js?t=1584448635"></script>
+		<script src="resources/js/bootstrap.min.js?t=1584448635"></script>
+	</head>
+	<body>
 
+		<div id="outer-wrap">
+			<header id="top">
+				<div class="top network">
+				</div><!-- / .network -->
 
-      <!-- Marketing messaging and featurettes
-      ================================================== -->
-      <!-- Wrap the rest of the page in another container to center all the content. -->
+				<div id="masthead">
+					<div class="header-container">
+						<div class="header-row brand">
+							<h1>
+								<a href="https://ufokn.github.io/UFOKN/" title="Urban Flooding Open Knowledge Network">
+									UF-OKN
+								</a>
+							</h1>
+						</div>
+						<nav class="header-row" id="nav">
+							<div class="header-nav">
+								<ul class="menu">
+									<li class="active">
+										<a href="index.html">Mission <span class="sr-only">(current)</span></a>
+									</li>
+									<li>
+										<a href="team.html">Team</a>
+									</li>
+								</ul>
+							</div>
+						</nav><!-- / #nav -->
+					</div>
+				</div><!-- / #masthead -->
 
-      <div class="container marketing">
+				<section class="diagramed left">
+					<div class="row">
+						<div class="col-md-6">
+							<h2>Urban Flooding<br />Open Knowledge Network</h2>
+							<p>The Urban Flooding Open Knowledge Network (UF-OKN) is a knowledge graph aiming to extract structured content from the information scattered across open-source geospatial datasets and hydrologic models. A knowledge graph stores information in a machine-readable format and provides a way for information to be collected, organised, shared, searched and used. Bing and Google use a similar approach to create side panels in our browsers. Currently, there is no way to connect information about urban infastructure to real time hydrologic forecasts. It is the goal of this work to make it easier for the vast amounts of information regarding our built and natural environments to become more helpful for planning, response, and general use.</p>
+						</div>
+					</div>
+				</section>
+			</header>
 
-        <!-- Three columns of text below the carousel -->
-        <div class="column">
-          
-          <div class="column">
-            <img class="rounded-circle" src="images/circles/logo.jpg" alt="Graph Example" width="140" height="140">
-            <h2>About</h2>
-            <p>The urban flood open knowledge network (UFOKN) is a knowledge graph aiming to extract structured content from the information scattered across open source geospatial datasets and hydrologic models. A knowledge graph stores information in a machine-readable format and provides a way for information to be collected, organised, shared, searched and used. Bing and Goolge use a similar approach to create side panels in our browsers. Currently, there is no way to connect information about urban infastructure to real time hydrologic forecasts. We hope  this work will make it easier for the huge amount of information regarding our built and natural environments to become more useful for planning, response, and general use. 
-</p>
-          </div><!-- /.col-lg-4 -->
-          
-          <div class="column">
-            <img class="rounded-circle" src="images/circles/kg-1.jpg" alt="Selected Flow Example" width="140" height="140">
-            <h2>UFOKN Knowledge Base</h2>
-            <p>Knowledge graphs are playing an increasingly important role in enhancing the intelligence of Web search and in supporting information integration. Today, there is no set knowledge graph that relates urban systems with hydrologic forecasts. Our data is served as Linked Data. One can navigate this information with standard Web browsers, automated crawlers or pose complex queries with SQL-like query languages (e.g. SPARQL). Have you thought of asking the Web about citiees with the roads most at risk of flooding over the last 10 years? That's the kind of query we are talking about. Moreover users can built there own interfacees on top of the graph to vizuale explore and share the information they find most relavant.</p>
-          </div><!-- /.col-lg-4 -->
-          
-   <!--     <div class="column">
-            <img class="rounded-circle" src="images/circles/urban-subset.png" alt="Downloads Example" width="140" height="140">
-            <h2>Risk Points</h2>
-            <p> Instead of treating the built environment and hydrologic system as two overlapping entiities, we seek to identify the core, explict realtionship between the conditions that casues problems and the infastrucuture that will be impacted. Two do this we extract the key realtionships betweeen spatial objects (like OpenStreetMap building foot prints and road networks) and relate them to there nearest river, and the critical streamflow that will innudate that location. Each point on the earth surface where there is a realtionship between the built and natural environment can be considered a risk point. Some obviously being more critical then others!. Finally we relate these risk points to the operational NOAA National Water Model providing realtime information and insight about if risk points are at risk.</p>
-          </div><!-- /.col-lg-4 -->
-          
-      
-        </div><!-- /.row -->
+			<main id="main">
+				<section class="diagramed highlighted">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="fa fa-lightbulb-o">
+								<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-book-open"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+							</div>
 
+							<h3>Knowledge Base</h3>
 
+							<p>Knowledge graphs are playing an increasingly important role in enhancing the intelligence of Web search and in supporting information integration. Today, there is no set knowledge graph that relates urban systems with hydrologic forecasts. Our data is served as Linked Data. One can navigate this information with standard web browsers, automated crawlers, or pose complex queries with SQL-like query languages (e.g. SPARQL). Have you thought of asking the Web about cities with the roads most at risk of flooding over the last 10 years? That's the kind of query we are talking about. Moreover users can build their own interfaces on top of the graph to visualize, explore, and share the information they find most relavant.</p>
+						</div>
+						<div class="col-md-6">
+							<div class="fa fa-exclamation-triangle">
+								<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-alert-triangle"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12" y2="17"></line></svg>
+							</div>
 
-        <!-- START THE FEATURETTES -->
+							<h3>Risk Points</h3>
 
-        <hr class="featurette-divider">
+							<p>Instead of treating the built environment and hydrologic system as two overlapping entities, we seek to identify the core explict relationship between the conditions that casues problems and the infastrucuture that will be impacted. To do this we extract the key relationships betweeen spatial objects (like OpenStreetMap building foot prints and road networks) and relate them to their nearest river, and the critical streamflow that will innudate that location.</p>
 
-        <div class="row featurette">
-          <div class="col-md-7">
-            <h2 class="featurette-heading">The Urban Multiplex. <span class="text-muted">A web of interconnected infastructure.</span></h2>
-            <p class="lead">All urban systems are interconnected. Impacts to the power grid will impact water treatment centers, houses, and emergency repsonse activiites. Understadning the impacts of flood only begins with identifying which risk points will be impacted. From there the way impacts cascade through the system depend on the relationships between different object types. As part of hte UFOKN, we are developing a rich ontology that generlizes the relatioships between different feature types to help identify these impacts as we traverse the knowledge network.</p>
-          </div>
-          <div class="col-md-5">
-            <img class="featurette-image img-fluid mx-auto shadow-right" src="images/featurettes/tmp-1.png"  alt="National Water Model">
-          </div>
-        </div>
+							<p>Each point on the earth surface where there is a realtionship between the built and natural environment can be considered a risk point, some obviously being more critical than others! Finally, we relate these risk points to the operational NOAA National Water Model providing realtime information and insight on level of risk at each point.</p>
+						</div>
+					</div>
+				</section>
 
-        <hr class="featurette-divider">
+				<section class="diagramed inverted">
+					<p class="tagline">Delivering flood information to anyone, anytime, anywhere.</p>
+				</section>
 
-        <div class="row featurette">
-          <div class="col-md-7 order-md-2">
-            <h2 class="featurette-heading">Past and Present. <span class="text-muted">Looking back in time.</span></h2>
-            <p class="lead">Realtime information is not the only thing that is useful for flood events. Often we are interested in whether a lcoation is at risk, if conditions have been changing through time, and if it is wise to invest in a location either as an individual or as a city. The UFOKN procvides access to a 24 year reanlysis product for the entire country along with the tools to produce easily digestable synopses of how and where flood risk is changing.</p>
-          </div>
-          <div class="col-md-5 order-md-1">
-            <img class="featurette-image img-fluid mx-auto shadow-left" src="images/featurettes/tmp-2.png"  alt="Area of Interest">
-          </div>
-        </div>
+				<section class="diagramed" id="urban-multiplex">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="diagram-figure">
+								<div class="diagram land"></div>
+								<div class="diagram dots"></div>
+								<div class="diagram transit"></div>
+								<div class="diagram water"></div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<h2>The Urban Multiplex</h2>
 
-        <hr class="featurette-divider">
+							<p>All urban systems are interconnected. Impacts to the power grid will impact water treatment centers, houses, and emergency repsonse activities.</p>
 
-        <div class="row featurette">
-          <div class="col-md-7">
-            <h2 class="featurette-heading">Performate Innudation Maps. <span class="text-muted">In real time.</span></h2>
-            <p class="lead">Everyone wants real-time performant flood maps that can be interacted with and shared via the web. Using the UFOKN and the risk point entities, this is now a reality. </p>
-          </div>
-          <div class="col-md-5">
-            <img class="featurette-image img-fluid mx-auto shadow-right" src="images/featurettes/tmp-3.png"  alt="Dygraph Example">
-          </div>
-        </div>
+							<p>Understadning the impacts of flood begins with identifying which risk points will be impacted. From there, the way impacts cascade through the system depend on the relationships between different object types. As part of the UF-OKN, we are developing a rich ontology that generlizes the relatioships between different feature types to help identify these impacts as we traverse the knowledge network.</p>
+						</div>
+					</div>
+				</section>
 
-        <hr class="featurette-divider">
+				<section class="diagramed left" id="past-and-present">
+					<div class="row">
+						<div class="col-md-6">
+							<h2>Past and Present</h2>
 
-        <div class="row featurette">
-          <div class="col-md-7 order-md-2">
-            <h2 class="featurette-heading">Build Better Apps. <span class="text-muted">Together.</span></h2>
-            <p class="lead">The UFOKN is the WeatherUnderground for flooding. We provide the critical information you need but how you use it is up to you! Users can build there own APIs web maps, and applications on top of the UFOKN. Whether this is for personal, public or commercial use the UFOKN provides a central palce for users to build on and contribute data.</p>
-          </div>
-          <div class="col-md-5 order-md-1">
-            <img class="featurette-image img-fluid mx-auto shadow-left" src="images/featurettes/tmp-4.png"  alt="High Flows Example">
-          </div>
-        </div>
+							<p>Real-time information is not the only thing that is useful for flood events. Often we are interested in whether a lcoation is at risk, if conditions have been changing through time, and if it is wise to invest in a location either as an individual or as a city. The UF-OKN provides access to a 24-year anlysis product for the entire country along with the tools to produce easily digestable synopses of how and where flood risk is changing.</p>
+						</div>
+						<div class="col-md-6">
+							<figure class="framed laptop">
+								<img src="images/featurettes/tmp-2.png" alt="Area of Interest">
+								<div class="frame"></div>
+							</figure>
+						</div>
+					</div>
+				</section>
 
-        <hr class="featurette-divider">
+				<section class="diagramed" id="inundation-maps">
+					<div class="row">
+						<div class="col-md-6">
+							<img src="images/featurettes/tmp-3-alt.png" alt="Dygraph Example">
+						</div>
+						<div class="col-md-6">
+							<h2>Performate Inundation Maps</h2>
 
-        <div class="row featurette">
-          <div class="col-md-7">
-            <h2 class="featurette-heading">Real-time Information. <span class="text-muted">When you need it.</span></h2>
-            <p class="lead">You just received a county wide flash flood alert. What should you do? With the UFOKN we can provide the general public and first responders with credible, actionable, information to make descision that best reflect there needs and interests. Is our inforamtionmation perfect? Of course not, but wouldn't you like to have the best state of the art inforamtion at your finger tips when it matters most?</p>
-          </div>
-          <div class="col-md-5">
-            <img class="featurette-image img-fluid mx-auto shadow-right" src="images/featurettes/tmp-5.png"  alt="Dygraph Example">
-          </div>
-        </div>
+							<p>Everyone wants real-time performant flood maps that can be interacted with and shared via the web. Using the UF-OKN and the risk point entities, this is now a reality.</p>
+						</div>
+					</div>
+				</section>
 
-        <hr class="featurette-divider">
+				<section class="diagramed left" id="better-apps">
+					<div class="row">
+						<div class="col-md-6">
+							<h2>Build Better Apps</h2>
 
-        <div class="row featurette">
-          <div class="col-md-7 order-md-2">
-            <h2 class="featurette-heading">Identifying our users <span class="text-muted"></span></h2>
-            <p class="lead">Two stakeholder workshops were organized to bring together industry, academic and the government participants to better understand their day-to-day challenges. From these a robust list of user personas were identified to guide the initial content and relationships needed in a urban flooding focused knowledge graph. </p>
-          </div>
-          <div class="col-md-5 order-md-1">
-            <img class="featurette-image img-fluid mx-auto" src="images/featurettes/tmp-6.png"  alt="Mobile Devices">
-          </div>
-        </div>
+							<p>The UF-OKN is the Weather Underground for flooding. We provide the critical information you need but how you use it is up to you! Users can build their own APIs, web maps, and applications on top of the UF-OKN. Whether this is for personal, public, or commercial use, the UF-OKN provides a central place for users to build on and contribute data.</p>
 
-        <hr class="featurette-divider">
+							<p><a class="btn btn-primary" href="http://ec2-18-222-146-63.us-east-2.compute.amazonaws.com:3838/" role="button">Launch App</a></p>
+						</div>
+						<div class="col-md-6">
+							<figure class="framed tablet">
+								<img src="images/featurettes/tmp-3.png" alt="Screenshot of a possible mobile application">
+								<div class="frame"></div>
+							</figure>
+						</div>
+					</div>
+				</section>
 
-        <!-- /END THE FEATURETTES -->
+				<section class="diagramed" id="real-time-info">
+					<div class="row">
+						<div class="col-md-6">
+							<figure class="framed desktop">
+								<img src="images/featurettes/tmp-5.png" alt="Screenshot of an application mining the UF-OKN data">
+								<div class="frame"></div>
+							</figure>
+						</div>
+						<div class="col-md-6">
+							<h2>Real-time Information</h2>
 
-      </div><!-- /.container -->
+							<p>You just received a county-wide flash flood alert. What should you do? With the UF-OKN we can provide the general public and first responders with credible, actionable information to make decisions that best reflect their needs and interests. Is our inforamtion perfect? Of course not, but wouldn't you like to have the best state-of-the-art inforamtion at your finger tips when it matters most?</p>
+						</div>
+					</div>
+				</section>
 
+				<section class="diagramed left" id="our-users">
+					<div class="row">
+						<div class="col-md-6">
+							<h2>Identifying our users</h2>
 
-      <!-- FOOTER -->
-      <footer class="container">
-        <p class="pull-right"><a href="#">Back to top</a></p>
-      </footer>
-    </main>
+							<p>Two stakeholder workshops were organized to bring together industry, academic, and government participants to better understand their day-to-day challenges. From these a robust list of user personas were identified to guide the initial content and relationships needed in an urban flooding focused knowledge graph.</p>
+						</div>
+						<div class="col-md-6">
+							<ul class="personas">
+								<li><img src="images/personas/erica.png" alt="Emergency Erica"></li>
+								<li><img src="images/personas/michael.png" alt="Manager Michael"></li>
+								<li><img src="images/personas/norman.png" alt="Nervous Norman"></li>
+								<li><img src="images/personas/paola.png" alt="Proactive Paola"></li>
+								<li><img src="images/personas/pete.png" alt="Powerful Pete"></li>
+								<li><img src="images/personas/rita.png" alt="Researcher Rita"></li>
+							</ul>
+						</div>
+					</div>
+				</section>
+			</main>
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="resources/js/jquery-3.3.1.slim.min.js"></script>
-    <script src="resources/js/popper.min.js"></script>
-    <script src="resources/js/bootstrap.min.js"></script>
-  </body>
+			<footer id="footer">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="nsf">
+							<p>
+								A <a href="https://www.nsf.gov">National Science Foundation</a> funded Project
+							</p>
+							<p class="disclaimer">
+								Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation.
+							</p>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<ul>
+							<li>&copy; 2020 Urban Flooding Open Knowledge Network</li>
+							<li>Maintained by the <a href="https://github.com/UFOKN">UF-OKN Team</a><br />Delivering flood information to anyone, anytime, anywhere</li>
+						</ul>
+					</div>
+				</div>
+			</footer>
+		</div><!-- / #outer-wrap -->
+
+	</body>
 </html>
