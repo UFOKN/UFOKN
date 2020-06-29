@@ -636,12 +636,17 @@ ol li:before {
 	font-weight: bold;
 	font-style: normal;
 	font-size: 2em;
+	background: url("../../images/logo.svg") top left no-repeat;
+	background-size: 100% auto;
 }
 #masthead h1 a {
 	display: block;
+	color: transparent;
+	height: 3.5em;
 }
 #masthead h1 a:hover {
 	border: none;
+	color: transparent;
 }
 
 /* [!] Menu */
