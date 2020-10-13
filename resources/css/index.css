@@ -981,10 +981,13 @@ ol li:before {
 	top: 75%;
 }
 
-.highlighted,
 .diagramed h2,
+.highlighted,
 #top .diagramed {
 	position: relative;
+}
+#top .diagramed .col-md-6>p:first-child {
+	margin-top: 0;
 }
 .diagramed h2:before {
 	content: "";
@@ -1051,7 +1054,6 @@ ol li:before {
 	height: 50%;
 	background: #222;
 	position: absolute;
-	top: 30%;
 	top: 5%;
 	left: 50%;
 	margin-left: -1px;
@@ -1095,16 +1097,17 @@ ol li:before {
 }
 .card-inner {
 	margin: 0 30px;
-	box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
 }
 .card-body {
 	padding: 15px;
 	background: #f9f9f9;
+	box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
 }
 .card-img-top {
 	height: 130px;
 	padding: 15px;
 	background: #fff;
+	box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
 }
 .card-img-top img {
 	height: 100%;
@@ -1180,6 +1183,23 @@ ol li:before {
 	color: #999;
 	margin: 0 0 1em 0;
 }
+.card-vid-top {
+	max-width: 560px;
+	width: 100%;
+	margin: 0px auto;
+}
+.card-vid-top > div {
+	position: relative;
+	padding-bottom: 60%;
+	height: 0;
+}
+.card-vid-top iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
 
 @media (min-width: 776px) {
 	#masthead {
@@ -1227,14 +1247,14 @@ ol li:before {
 		margin: 0;
 	}
 	.card-container {
-		margin: 0 30px;
+		margin: 0 -15px;
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
 	}
-	.card {
+	.card-container .card {
 		width: 33.33%;
 	}
 	.card-img-top {
@@ -1243,6 +1263,10 @@ ol li:before {
 	.card-body {
 		padding: 30px;
 	}
+	.card iframe {
+		width: 100%;
+		margin: 0;
+	}
 
 	.personas {
 		height: 300px;
@@ -1250,6 +1274,9 @@ ol li:before {
 	}
 	.personas li {
 		width: 200px;
+	}
+	.persona {
+		margin: 30px 0;
 	}
 }
 
@@ -1317,7 +1344,7 @@ ol li:before {
 	a:visited {
 		text-decoration: underline;
 	}
-		abbr[title]:after {
+	abbr[title]:after {
 		content: " (" attr(title) ")";
 	}
 	a[href^="javascript:"]:after,
