@@ -1103,6 +1103,14 @@ ol li:before {
 	background: #f9f9f9;
 	box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
 }
+.card-body>*:first-child {
+	margin-top: 0;
+	padding-top: 0;
+}
+.card-body>*:last-child {
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
 .card-img-top {
 	height: 130px;
 	padding: 15px;
@@ -1114,20 +1122,95 @@ ol li:before {
 }
 
 /* Personas */
+.persona-list {
+	background-color: #1f232f;
+	color: #eeedeb;
+	padding: 30px 0;
+	text-align: center;
+}
+.persona .card p {
+	margin: 1em 0;
+}
 .personas {
 	list-style: none;
 	position: relative;
 	height: 250px;
 	margin: 0 auto;
 }
+.persona-list li,
 .personas li {
 	border: 5px solid #fff;
 	border-radius: 5px;
 	width: 150px;
 	box-shadow: 0 0px 2px rgba(0, 0, 0, 0.2);
+}
+.persona-title {
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+}
+.persona-list li {
+	list-style: none;
+	display: inline-block;
+	margin: 0 15px 0 0;
+	background-color: #fff;
+	width: 10%;
+	max-width: 150px;
+	min-width: 75px;
+}
+.persona-list li.disabled {
+	opacity: 0.5;
+}
+.persona-list li:not(.disabled):hover {
+	box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+	animation: bounce 1s;
+	animation-timing-function: ease;
+	animation-iteration-count: infinite;
+	border-color: #64beff;
+	background-color: #64beff;
+}
+.personas li {
 	position: absolute;
 	top: 20px;
 }
+.persona-list li a {
+	position: relative;
+}
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.middle .text {
+	background: #fff;
+	color: #1f232f;
+	font-weight: bold;
+	padding: 1em 1.5em;
+	border-radius: 3px;
+	box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes bounce {
+	0%, 20%, 60%, 100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+	40% {
+		-webkit-transform: translateY(-15px);
+		transform: translateY(-15px);
+	}
+	80% {
+		-webkit-transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+}
+
+.persona-list li img,
 .personas li img {
 	border-radius: 3px;
 }
