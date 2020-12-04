@@ -1295,6 +1295,16 @@ ul.card-text {
 ul.card-text li {
 	margin: 0.2em 0;
 }
+.fa svg {
+	fill: none;
+	stroke: currentColor;
+	stroke-width: 2;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+.badge-primary {
+	background-color: #0071EB;
+}
 
 .contact {
 	display: block;
