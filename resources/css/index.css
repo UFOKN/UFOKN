@@ -1002,28 +1002,6 @@ ol li:before {
 	left: -30px;
 	right: auto;
 }
-.highlighted:after,
-#top .diagramed:before,
-#top .diagramed:after {
-	content: "";
-	position: absolute;
-	bottom: -30px;
-	right: 25%;
-	height: 60px;
-	width: 2px;
-	background-color: #fff;
-}
-#top .diagramed:before {
-	bottom: 30px;
-	width: 15px;
-	height: 2px;
-}
-.highlighted:after {
-	top: 0;
-	height: 30px;
-	right: 25%;
-	background-color: #f1f1f1;
-}
 
 .diagram-figure .diagram:before {
 	content: "";
@@ -1066,15 +1044,19 @@ ol li:before {
 .inverted {
 	background-color: #222;
 	color: #eee;
-	margin-bottom: 60px;
+	/*margin-bottom: 60px;*/
 }
+.inverted h2,
 .inverted h3 {
 	color: #fff;
 }
-.inverted p {
+.tagline {
 	text-align: center;
 	font-size: 2em;
 	font-family: 'Oswald', 'League Gothic', 'Arial Narrow', Impact, sans-serif;
+}
+#urban-multiplex {
+	margin-top: 60px;
 }
 
 /* Highlighted section */
@@ -1329,7 +1311,35 @@ ul.card-text li {
 	min-height: 40em;
 }
 
+.intro {
+	font-size: 1.2em;
+	margin: 0 0 2em 0;
+}
+
 @media (min-width: 776px) {
+	.highlighted:after,
+	.inverted:before,
+	.inverted:after {
+		content: "";
+		position: absolute;
+		bottom: 0px;
+		right: 25%;
+		height: 60px;
+		width: 2px;
+		background-color: #fff;
+	}
+	.inverted:before {
+		bottom: 60px;
+		width: 15px;
+		height: 2px;
+	}
+	.highlighted:after {
+		top: 0;
+		height: 30px;
+		right: 25%;
+		background-color: #f1f1f1;
+	}
+
 	#masthead {
 		padding: 30px 60px;
 	}
