@@ -1040,18 +1040,23 @@ ol li:before {
 	display: none;
 }
 
+.diagramed.right h3,
+.diagramed.left h3 {
+	font-size: 2em;
+}
+
 /* Inverted section */
 .inverted {
 	background-color: #222;
 	color: #eee;
-	/*margin-bottom: 60px;*/
+	text-align: center;
 }
 .inverted h2,
 .inverted h3 {
 	color: #fff;
+	margin: 0;
 }
 .tagline {
-	text-align: center;
 	font-size: 2em;
 	font-family: 'Oswald', 'League Gothic', 'Arial Narrow', Impact, sans-serif;
 }
@@ -1310,16 +1315,34 @@ ul.card-text li {
 .card-twitter {
 	min-height: 40em;
 }
-
+.row + .row {
+	margin-top: 30px;
+}
 .intro {
 	font-size: 1.2em;
 	margin: 0 0 2em 0;
 }
+.question-wrap {
+	position: relative;
+}
+.question-wrap span {
+	display: inline-block;
+}
+.question {
+	font-size: 2.6em;
+	line-height: 1;
+	color: #f4c5bd;
+}
+.question-subject {
+	margin: 0 0.75em;
+	/*position: absolute;
+	top: 0;*/
+}
 
 @media (min-width: 776px) {
 	.highlighted:after,
-	.inverted:before,
-	.inverted:after {
+	#top .diagramed:before,
+	#top .diagramed:after {
 		content: "";
 		position: absolute;
 		bottom: 0px;
@@ -1328,7 +1351,7 @@ ul.card-text li {
 		width: 2px;
 		background-color: #fff;
 	}
-	.inverted:before {
+	#top .diagramed:before {
 		bottom: 60px;
 		width: 15px;
 		height: 2px;
